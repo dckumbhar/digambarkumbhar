@@ -28,6 +28,7 @@ ul {
     border: solid 2px #0080ff;
     cursor: pointer;
     text-decoration: none;
+    min-width: 200px;
 }
 .button:hover {
     border-color:black;
