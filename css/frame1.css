@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.dark .header {
+    background-color: #333;
+}
+.header {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    border-bottom: solid 1px black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.lsidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #333;
+}
+.lsidebar .grid {
+    display: grid;
+    grid-template-rows: auto auto auto ;
+}
+.lsidebar .imgframe {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+}
+.lsidebar .imgframe img {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.lsidebar .details {
+    background-color: white;
+}
+.lsidebar .details div {
+    display: block;
+    background-color: lime;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.lsidebar .lfooter {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .body  {
+    background-color: black;
+    color: white;
+}
+.brite {
+    background-color: #aaa;
+    color: black;
+}
+.body {
+    background-color: black;
+    position: fixed;
+    top: 60px;
+    left: 300px;
+    right: 200px;
+    bottom:0;
+    overflow: auto;
+}
+.rsidebar {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: blue;
+    overflow-y: auto;
+}
+@media only screen and (max-width: 1150px) {
+    .lsidebar .lfooter {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    .body {
+        right: 0;
+    }
+    .rsidebar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .lsidebar {
+        position: static;
+        width: initial;
+    }
+    .lsidebar .grid {
+        grid-template-columns: auto auto auto;
+    }
+    .lsidebar .details {
+        align-self: center;
+    }
+    .lsidebar .lfooter {
+        align-self: center;
+        background-color: blue;
+    }
+    .body {
+        position: static;
+    }
+    .rsidebar {
+        position: fixed;
+        display: none;
+    }
+}

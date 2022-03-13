@@ -1,0 +1,177 @@
+
+<html lang="en">
+    <head>
+        <title>PROJECTS</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="about">
+        <meta name="author" content="digambar kumbhar">
+        <meta viewport="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="HTML, CSS, JavaScript">
+        <link href="../css/c0.css"  rel="stylesheet">
+        <link href="../css/design-contents-1.css"  rel="stylesheet">
+        <link href="../css/game.css" rel="stylesheet" />
+        <link href="../css/typingMaster.css" rel="stylesheet" type="text/css">
+        <link href="../css/csws_html_hilighter.css" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="../css/bot1.css"> -->
+    </head>
+    <body>
+        <div class="page">
+            <header class="box-2">
+                <div class="main-header">
+                    <div class="title-box">
+                        <p class="title-name">DIGAMBAR KUMBHAR</p>
+                        <p class="title-status">FRONT END DEVELOPER</p>
+                    </div>
+                    <div class="nav-box">
+                        <nav>
+                            <ul>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="projects.html">PROJECTS</a></li>
+                                <li><a href="artGallery.html">ART</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="box-1 center-box b-dark">
+                    <h1>MY PROJECTS</h1>
+
+                </div>
+                <div class="box-3">
+                    <h1>GAME</h1>
+                    <hr>
+                    <div class="center-box">
+                        <div sstyle="display: grid; grid-template-rows: auto 200px; grid-gap: 0;" id="container">
+                            <div>
+                                <canvas id="playground"></canvas>
+                            </div>
+                            <div class="controlsContainer center-box" style="display: grid; grid-template-columns: auto auto;">
+                                <button style="height:60px; width: 200px" id="leftbtn">left</button>
+                                <button style="height:60px; width: 200px" id="rightbtn">right</button>
+                                <button style="height:60px; width: 200px" id="upbtn">up</button>
+                                <button style="height:60px; width: 200px" id="downbtn">down</button>
+                                <button style="height:60px; width: 200px" id="startbtn">start</button>
+                            </div>
+                        </div>
+                        <script src="../js/game.js" rel="stylesheet" type="text/javascript"></script>
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div class="body">
+                        <div class="display" id="display">
+                            <textarea class="text" id="text"></textarea>
+                            <div class="highlighter" id="highlighter"></div>
+                        </div>
+                        <div class="keyboard">
+                            <div class="line">
+                                <button id="charCode" class="keya key tildekey"><span class="top">~</span><span class="bottom">`</span></button>
+                                <button id="charCode" class="keya key"><span class="top">!</span><span class="bottom">1</span></button>
+                                <button id="charCode" class="keyb key"><span class="top">@</span><span class="bottom">2</span></button>
+                                <button id="charCode" class="keyc key"><span class="top">#</span><span class="bottom">3</span></button>
+                                <button id="charCode" class="keyd key"><span class="top">$</span><span class="bottom">4</span></button>
+                                <button id="charCode" class="keyd key"><span class="top">%</span><span class="bottom">5</span></button>
+                                <button id="charCode" class="keyd key"><span class="top">^</span><span class="bottom">6</span></button>
+                                <button id="charCode" class="keyd key"><span class="top">&</span><span class="bottom">7</span></button>
+                                <button id="charCode" class="keyc key"><span class="top">*</span><span class="bottom">8</span></button>
+                                <button id="charCode" class="keyb key"><span class="top">(</span><span class="bottom">9</span></button>
+                                <button id="charCode" class="keya key"><span class="top">)</span><span class="bottom">0</span></button>
+                                <button id="charCode" class="keya key"><span class="top">_</span><span class="bottom">-</span></button>
+                                <button id="charCode" class="keya key"><span class="top">+</span><span class="bottom">=</span></button>
+                                <button id="charCode" class="keya key backspacekey"><sapn>backspace</sapn></button>
+                            </div>
+                            <div class="line">
+                                <button id="charCode" class="keya key tabkey">tab</button>
+                                <button id="charCode81" class="keya key">Q</button>
+                                <button id="charCode87" class="keyb key">W</button>
+                                <button id="charCode69" class="keyc key">E</button>
+                                <button id="charCode82" class="keyd key">R</button>
+                                <button id="charCode84" class="keyd key">T</button>
+                                <button id="charCode89" class="keyd key">Y</button>
+                                <button id="charCode85" class="keyd key">U</button>
+                                <button id="charCode73" class="keyc key">I</button>
+                                <button id="charCode79" class="keyb key">O</button>
+                                <button id="charCode80" class="keya key">P</button>
+                                <button id="charCode" class="keya key"><span class="top">{</span><span class="bottom">[</span></button>
+                                <button id="charCode" class="keya key"><span class="top">}</span><span class="bottom">]</span></button>
+                                <button id="charCode" class="keya key backslashkey"><span class="top">|</span><span class="bottom">\</span></button>
+                            </div>
+                            <div class="line">
+                                <button id="charCode" class="keya key capslockkey">caps lock</button>
+                                <button id="charCode65" class="keya key">A</button>
+                                <button id="charCode83" class="keyb key">S</button>
+                                <button id="charCode68" class="keyc key">D</button>
+                                <button id="charCode70" class="keyd key">F</button>
+                                <button id="charCode71" class="keyd key">G</button>
+                                <button id="charCode72" class="keyd key">H</button>
+                                <button id="charCode74" class="keyd key">J</button>
+                                <button id="charCode75" class="keyc key">K</button>
+                                <button id="charCode76" class="keyb key">L</button>
+                                <button id="charCode" class="keya key"><span class="top">:</span><span class="bottom">;</span></button>
+                                <button id="charCode" class="keya key"><span class="top">"</span><span class="bottom">'</span></button>
+                                <button id="charCode" class="keya key enterkey">enter</button>
+                            </div>
+                            <div class="line">
+                                <button id="lshift" class="keya key lshiftkey">shift</button>
+                                <button id="charCode90" class="keya key">Z</button>
+                                <button id="charCode88" class="keyb key">X</button>
+                                <button id="charCode67" class="keyc key">C</button>
+                                <button id="charCode86" class="keyd key">V</button>
+                                <button id="charCode66" class="keyd key">B</button>
+                                <button id="charCode78" class="keyd key">N</button>
+                                <button id="charCode77" class="keyd key">M</button>
+                                <button id="charCode" class="keyc key"><span class="top"><</span><span class="bottom">,</span></button>
+                                <button id="charCode" class="keyb key"><span class="top">></span><span class="bottom">.</span></button>
+                                <button id="charCode" class="keya key"><span class="top">?</span><span class="bottom">/</span></button>
+                                <button id="rshift" class="keya key rshiftkey">shift</button>
+                            </div>
+                            <div class="line">
+                                <button class="key llkey ctrlkey">ctrl</button>
+                                <button class="key llkey">w</button>
+                                <button class="key llkey">alt</button>
+                                <button class="key llkey spacekey" id="spacekey">space</button>
+                                <button class="key llkey">alt</button>
+                                <button class="key llkey">p</button>
+                                <button class="key llkey">p</button>
+                                <button class="key llkey">ctrl</button>
+                            </div>
+                        </div>
+                        <div class="fingerhighlighter">
+                            <img src="../img/a5.jpeg" height="200px" width="300px">
+                            <span class="keya"></span>
+                            <span class="keyb"></span>
+                            <span class="keyc"></span>
+                            <span class="keyd"></span>
+                            <span clsss="keye"></span>
+            
+                            <span clsss="keye"></span>
+                            <span class="keyd"></span>
+                            <span class="keyc"></span>
+                            <span class="keyb"></span>
+                            <span class="keya"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-3">
+                    <div style="height: 400px;width:500px; background: black;" id="csws_html_hilighter02"></div>
+                </div>
+                <div class="box-2">
+                    <div class="center-box b-dark">
+                        <p>Copyright © 2022 Digambar Kumbhar</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+        <span class="reference" id="ref1" style="display:none;">I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best. I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.</span>
+        <!-- <script src="../js/typingMaster.js" type="text/javascript" language="javascript"></script> -->
+        <!-- <script src="../js/bot1.js" language="javascript" type="text/javascript"></script> -->
+        <!-- <script src="../js/frame-1.js"  language="javascript" type="text/javascript"></script>  -->
+        <script src="../js/design-contents-1.js"  language="javascript" type="text/javascript"></script>
+        <script src="../js/csws-html-highlighter.js" type="text/javascript"></script>
+    </body>
+</html>

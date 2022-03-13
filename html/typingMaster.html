@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>z
+        <title>Assistant</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Janu bot">
+        <meta name="keyword" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Digambar kumbhar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta http-equiv="refresh" content="30"  -->
+        <link rel="stylesheet" href="../css/bot1.css">
+        <link href="../css/typingMaster.css" rel="stylesheet" type="text/css">
+    </head>
+    <body onload="welcome()">
+        
+        <div class="header">
+            <div class="title"><h2><span style="color:#ff8944">MY</span>ASSISTANT</h2></div>
+        </div>
+        <div class="lsidebar">
+            <center>
+                <div class="imgframe">
+                    <img src="../img/samurai.png">
+                </div>
+            </center>
+            <div>
+                <span class="small dark">DEVELOPED BY</span>
+                <span class="name">DIGAMBAR KUMBHAR</span>
+                <span class="username">@sketcher_dk</span>
+                <span class="username">FRONT END DEVELOPER</span>
+            </div>
+            <div class="lfooter">
+                <spna class="small dark">Copyright &#169; 2022</span>
+            </div>
+        </div> <!-- aaazaa0 -->
+        <div class="body">
+            <div class="display" id="display">
+                <textarea class="text" id="text"></textarea>
+                <div class="highlighter" id="highlighter"></div>
+            </div>
+            <div class="keyboard">
+                <div class="line">
+                    <button id="charCode" class="keya key tildekey"><span class="top">~</span><span class="bottom">`</span></button>
+                    <button id="charCode" class="keya key"><span class="top">!</span><span class="bottom">1</span></button>
+                    <button id="charCode" class="keyb key"><span class="top">@</span><span class="bottom">2</span></button>
+                    <button id="charCode" class="keyc key"><span class="top">#</span><span class="bottom">3</span></button>
+                    <button id="charCode" class="keyd key"><span class="top">$</span><span class="bottom">4</span></button>
+                    <button id="charCode" class="keyd key"><span class="top">%</span><span class="bottom">5</span></button>
+                    <button id="charCode" class="keyd key"><span class="top">^</span><span class="bottom">6</span></button>
+                    <button id="charCode" class="keyd key"><span class="top">&</span><span class="bottom">7</span></button>
+                    <button id="charCode" class="keyc key"><span class="top">*</span><span class="bottom">8</span></button>
+                    <button id="charCode" class="keyb key"><span class="top">(</span><span class="bottom">9</span></button>
+                    <button id="charCode" class="keya key"><span class="top">)</span><span class="bottom">0</span></button>
+                    <button id="charCode" class="keya key"><span class="top">_</span><span class="bottom">-</span></button>
+                    <button id="charCode" class="keya key"><span class="top">+</span><span class="bottom">=</span></button>
+                    <button id="charCode" class="keya key backspacekey"><sapn>backspace</sapn></button>
+                </div>
+                <div class="line">
+                    <button id="charCode" class="keya key tabkey">tab</button>
+                    <button id="charCode81" class="keya key">Q</button>
+                    <button id="charCode87" class="keyb key">W</button>
+                    <button id="charCode69" class="keyc key">E</button>
+                    <button id="charCode82" class="keyd key">R</button>
+                    <button id="charCode84" class="keyd key">T</button>
+                    <button id="charCode89" class="keyd key">Y</button>
+                    <button id="charCode85" class="keyd key">U</button>
+                    <button id="charCode73" class="keyc key">I</button>
+                    <button id="charCode79" class="keyb key">O</button>
+                    <button id="charCode80" class="keya key">P</button>
+                    <button id="charCode" class="keya key"><span class="top">{</span><span class="bottom">[</span></button>
+                    <button id="charCode" class="keya key"><span class="top">}</span><span class="bottom">]</span></button>
+                    <button id="charCode" class="keya key backslashkey"><span class="top">|</span><span class="bottom">\</span></button>
+                </div>
+                <div class="line">
+                    <button id="charCode" class="keya key capslockkey">caps lock</button>
+                    <button id="charCode65" class="keya key">A</button>
+                    <button id="charCode83" class="keyb key">S</button>
+                    <button id="charCode68" class="keyc key">D</button>
+                    <button id="charCode70" class="keyd key">F</button>
+                    <button id="charCode71" class="keyd key">G</button>
+                    <button id="charCode72" class="keyd key">H</button>
+                    <button id="charCode74" class="keyd key">J</button>
+                    <button id="charCode75" class="keyc key">K</button>
+                    <button id="charCode76" class="keyb key">L</button>
+                    <button id="charCode" class="keya key"><span class="top">:</span><span class="bottom">;</span></button>
+                    <button id="charCode" class="keya key"><span class="top">"</span><span class="bottom">'</span></button>
+                    <button id="charCode" class="keya key enterkey">enter</button>
+                </div>
+                <div class="line">
+                    <button id="lshift" class="keya key lshiftkey">shift</button>
+                    <button id="charCode90" class="keya key">Z</button>
+                    <button id="charCode88" class="keyb key">X</button>
+                    <button id="charCode67" class="keyc key">C</button>
+                    <button id="charCode86" class="keyd key">V</button>
+                    <button id="charCode66" class="keyd key">B</button>
+                    <button id="charCode78" class="keyd key">N</button>
+                    <button id="charCode77" class="keyd key">M</button>
+                    <button id="charCode" class="keyc key"><span class="top"><</span><span class="bottom">,</span></button>
+                    <button id="charCode" class="keyb key"><span class="top">></span><span class="bottom">.</span></button>
+                    <button id="charCode" class="keya key"><span class="top">?</span><span class="bottom">/</span></button>
+                    <button id="rshift" class="keya key rshiftkey">shift</button>
+                </div>
+                <div class="line">
+                    <button class="key llkey ctrlkey">ctrl</button>
+                    <button class="key llkey">w</button>
+                    <button class="key llkey">alt</button>
+                    <button class="key llkey spacekey" id="spacekey">space</button>
+                    <button class="key llkey">alt</button>
+                    <button class="key llkey">p</button>
+                    <button class="key llkey">p</button>
+                    <button class="key llkey">ctrl</button>
+                </div>
+            </div>
+            <div class="fingerhighlighter">
+                <img src="../img/a5.jpeg" height="200px" width="300px">
+                <span class="keya"></span>
+                <span class="keyb"></span>
+                <span class="keyc"></span>
+                <span class="keyd"></span>
+                <span clsss="keye"></span>
+
+                <span clsss="keye"></span>
+                <span class="keyd"></span>
+                <span class="keyc"></span>
+                <span class="keyb"></span>
+                <span class="keya"></span>
+            </div>
+        </div>
+        <div class="rsidebar">
+            <span class="aaaaaa0 active" onclick="aaaaaa(event, 'aaazaa0')">BOT</span>
+            <span class="aaaaaa0 var" onclick="aaaaaa(event, 'aaaaaa0')">GAME</span>
+            <span class="aaaaaa0 var" onclick="aaaaaa(event, 'aaaaab0')">WORKSPACE</span>
+            <span class="aaaaaa0 var" onclick="aaaaaa(event, 'aaaaac0')">ABOUT</span>
+            <span class="aaaaaa0 var" onclick="aaaaaa(event, 'aaaaad0')">HIGHLIGHTER</span>
+        </div>
+        <div class="footer">
+            <input id="msginput" type="text" placeholder="Enter your answer">
+            <button id="insbtn" onclick="funcA()">Go</button>
+        </div>
+        <span class="reference" id="ref1">I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best. I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.</span>
+        <script src="../js/typingMaster.js" type="text/javascript" language="javascript"></script>
+        <script src="../js/bot1.js" language="javascript" type="text/javascript"></script>
+        <script src="../js/frame-1.js"  language="javascript" type="text/javascript"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+<!DOCTYPE html>
+<html lnag="en">
+    <head>
+        <title>Typing Master</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Typing Master">
+        <meta name="author" content="Digambar Kumbhar">
+        <meta name="viewprot" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="title">
+                <h2></h2><span>TYPING</span>MASTER</h2>
+            </div>
+        </div>
+        <div class="main">
+            <div class="body">
+            </div>
+        </div>
+        
+        
+    </body>
+</html> -->

@@ -1,0 +1,47 @@
+
+#csws_html_hilighter02 {
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+#csws_html_page02 {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+}
+#csws_html_src02 {
+  background: transparent;
+  opacity: 0;
+  border: none;
+  outline: none;
+  resize:none;
+  min-height: 16px;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+.csws_html_caret02 {
+  background: white;
+  width: 1px;
+  height: 14px;
+  display: inline-block;
+  transform: translate(0, 2px);
+  padding: 0;
+  margin: 0;
+}
+.line02 {
+  height: 16px;
+  padding: 0;
+  margin: 0;
+}
+.err02 {
+  color: red;
+}
+.html-comment02 {color: gray}
+.html-bracket02 {color:#aaaaaa}
+.html-tag02{color:#23d7ff }
+.html-attr02{color:#fd5d6e}
+.html-attrVal02{color:#41ff55}
+.html-sign02{color:#cfbbd6}
