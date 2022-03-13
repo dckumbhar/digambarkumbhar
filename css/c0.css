@@ -29,6 +29,7 @@ ul {
     cursor: pointer;
     text-decoration: none;
     min-width: 200px;
+    text-align: center;
 }
 .button:hover {
     border-color:black;
@@ -134,26 +135,26 @@ header::after {
 } */
 .page-content .personal-details {
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 500px auto;
 }
 .page-content .personal-details .img-container {
-    display: flex;
+    display: block;
     justify-content: center;
+    /* height: 500px; */
+    /* background-color: #000; */
 }
 .page-content .personal-details .img-container div {
     display: flex;
     justify-content: center;
     background-image: linear-gradient(45deg, #0000ff, #00ff00,#ff0000);
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     padding: 10px;
 }
 .page-content .personal-details .img-container img {
-    min-height: 250px;
-    min-width: 250px;
-    max-width: 300px;
-    max-height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     /* border: solid 5px black; */
     /* margin: 5px; */
@@ -232,7 +233,7 @@ header::after {
     padding: 10px;
     /* background-color: #000; */
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns:auto auto auto;
 }
 .art-gallery {
     display: grid;
@@ -248,7 +249,7 @@ header::after {
     background-color: white;
     margin-bottom: 50px;
     box-shadow: 0 10px 10px #000;
-    transition: 1s;
+    transition: 0.5s;
 }
 .art-gallery .img-frame:hover {
     transform:scale(1.1,1.1);
@@ -269,7 +270,7 @@ header::after {
 }
 @media only screen and (max-width: 1700px) {
     .page {
-        width: auto;
+        width: initial;
     }
 }
 .blue {
@@ -279,9 +280,6 @@ header::after {
     .art-gallery-container {
         grid-template-columns: auto auto auto;
     }
-    .art-gallery {
-        grid-template-columns: auto auto ;
-    }
 }
 @media only screen and (max-width: 1000px) {
     .main-header {
@@ -290,20 +288,80 @@ header::after {
     .page-content .personal-details {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 400px auto !important;
+        grid-gap:50px;
+    }
+    .art-gallery-container {
+        grid-template-columns: auto auto;
+    }
+    .art-gallery {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .main-header .nav-box {
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .nav-box {
+        display: none;
     }
     .art-gallery-container {
         grid-template-columns: auto;
     }
-    .edu-grid {
+    .art-gallery {
         grid-template-columns: auto;
     }
 }
-@media only screen and (max-width: 900px) {
-    .nav-box {
-        display: none;
+.img-slider-a {
+    background-color: #666;
+}
+#page-loading {
+    position: fixed;
+    display:flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.loading {
+    display:flexbox;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(45deg, #0000ff, #00ff00,#ff0000);
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border-radius: 50%;
+    color: white;
+    animation: load 1s infinite;
+}
+.loading > div {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: #000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes load {
+    0% {
+        background-image: linear-gradient(45deg, #0000ff, #00ff00,#ff0000);
     }
-    .art-gallery {
-        grid-template-columns: auto;
+    25% {
+        background-image: linear-gradient(135deg, #0000ff, #00ff00,#ff0000);
+    }
+    50% {
+        background-image: linear-gradient(225deg, #0000ff, #00ff00,#ff0000);
+    }
+    75% {
+        background-image: linear-gradient(315deg, #0000ff, #00ff00,#ff0000);
+    }
+    100% {
+        background-image: linear-gradient(45deg, #0000ff, #00ff00,#ff0000);
     }
 }

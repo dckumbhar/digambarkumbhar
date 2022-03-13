@@ -11,6 +11,14 @@
         <link href="../css/design-contents-1.css"  rel="stylesheet">
     </head>
     <body>
+        <div id="page-loading">
+            <div class="loading">
+                <div><span>loading</span></div>
+            </div>
+        </div>
+        <script>
+            window.onload = function(){document.getElementById('page-loading').style.display = 'none';} 
+        </script>
         <div class="page">
             <header class="box-2">
                 <div class="main-header">
@@ -21,7 +29,7 @@
                     <div class="nav-box">
                         <nav>
                             <ul>
-                                <li><a href="../about.html">ABOUT</a></li>
+                                <li><a href="../digmabarkumbhar.html">ABOUT</a></li>
                                 <li><a href="projects.html">PROJECTS</a></li>
                                 <li><a onclick="window.location.reload()">ART</a></li>
                             </ul>
@@ -37,8 +45,8 @@
                 </div>
                 <div class="box-3 art-gallery center-box">
                     <div class="img-frame">
-                        <img src="../img/sketch1.png">
-                        <span class="my-name">DIGAMBAR KUMBHAR</span>
+                        <img id="img1" src="../img/sketch1.png">
+                        <span class="my-name" >DIGAMBAR KUMBHAR</span>
                     </div>
                     <div class="img-frame">
                         <img src="../img/sketch2.jpg" alt="">

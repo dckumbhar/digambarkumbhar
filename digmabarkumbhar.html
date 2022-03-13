@@ -11,6 +11,11 @@
         <link href="css/design-contents-1.css"  rel="stylesheet">
     </head>
     <body>
+        <div id="page-loading">
+            <div class="loading">
+                <div><span>loading</span></div>
+            </div>
+        </div>
         <div class="page">
             <header class="box-2">
                 <div class="main-header">
@@ -32,17 +37,19 @@
             <div class="page-content">
                 <div style="padding-bottom: 60px" class="box-1">
                     <div class="personal-details">
-                        <div class="img-container">
-                            <div>
-                                <img src="img/samurai.png" alt="My pic">
+                        <div class="center-box">
+                            <div class="img-container">
+                                <div>
+                                    <img src="img/samurai.png" alt="My pic">
+                                </div>
                             </div>
                         </div>
-                        <div class="details-container">
+                        <div class="details-container center-box">
                             <div>
                                 <p style="font-size:46px;">Hi! I am Digambar kumbhar,</p>
                                 <p class="small blue">FRONT END DEVELOPER | SKETCHER </p>
                                 <p>ADRRESS: Vithalapur, Atpadi, Sangli, Maharashtra</p>
-                                <p class="small">PIN CODE: 415 301</p>
+                                <p class="small b-dark">PIN CODE: 415 301</p>
                                 <p class="b-dark small">Languages: Marathi | Hindi | English</p>
                                 <div class="social-media">
                                     <a href="https://www.instagram.com/sketcher_dk/">
@@ -116,7 +123,7 @@
                     </div>
                 </div>
                 <div class="box-3">
-                    <p>Web Developer specializing in front end development. Experienced with all stages of the development cycle for web projects. Well-versed in numerous programming Languages including HTML5, CSS3, JavaScript, php, C, C++ and Python. Strong background in designing.</p>
+                    <p>Web Developer specializing in front end development. Experienced with all stages of the development cycle for web projects. Well-versed in numerous programming Languages including HTML5, CSS3, JavaScript, C, C++ and Python. Strong background in designing.</p>
                 </div>
                 <div class="box-1">
                     <h1>Education:</h1>
@@ -167,7 +174,7 @@
                     </ul>
                     <div class="center-box">
                         <div class="art-gallery-container center-box">
-                            <div class="img-slider-a">
+                            <div class="img-slider-a frame1">
                                 <div class="img-slider-container-a">
                                     <div class="aabWRF1 var img-container" id="aabAAC1"><img src="img/sketch29.jpg" /></div>
                                     <div class="aabWRF1 hidden img-container" id="aabaaa1"><img src="img/sketch18.jpg" /></div>
@@ -186,7 +193,7 @@
                              <script>
                                 window.onload = setInterval(()=>{aaaaam('aab1');}, '5000');
                             </script>
-                            <div class="img-slider-a">
+                            <div class="img-slider-a frame2">
                                 <div class="img-slider-container-a">
                                     <div class="aabWRF2 var img-container" id="aabAAC2"><img src="img/sketch30.jpg" /></div>
                                     <div class="aabWRF2 hidden img-container" id="aabaaa2"><img src="img/sketch8.jpg" /></div>
@@ -205,7 +212,7 @@
                              <script>
                                 window.onload = setInterval(()=>{aaaaam('aab2');}, '5000');
                             </script>
-                            <div class="img-slider-a">
+                            <div class="img-slider-a frame3">
                                 <div class="img-slider-container-a">
                                     <div class="aabWRF3 var img-container" id="aabAAC3"><img src="img/sketch26.jpg" /></div>
                                     <div class="aabWRF3 hidden img-container" id="aabaaa3"><img src="img/sketch15.jpg" /></div>
@@ -248,5 +255,8 @@ svg {
 
         </div>
         <script src="js/design-contents-1.js"  language="javascript" type="text/javascript"></script>
+        <script>
+            window.onload = function(){document.getElementById('page-loading').style.display = 'none';} 
+        </script>
     </body>
 </html>
